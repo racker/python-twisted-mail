@@ -1,0 +1,21 @@
+Source: twisted-mail
+Section: python
+Priority: optional
+Maintainer: Matthias Klose <doko@debian.org>
+Uploaders: Free Ekanayaka <freee@debian.org>
+Build-Depends: debhelper (>=7.0.50~), python-central (>= 0.6.7), python-all, python-twisted-core (>= 12.0), patch
+XS-Python-Version: all
+Standards-Version: 3.9.2
+
+Package: python-twisted-mail
+Architecture: all
+Depends: ${python:Depends}, python-twisted-core (>= 12.0), python-openssl, ${misc:Depends}
+Recommends: python-twisted-names
+Conflicts: python-twisted (<< 2.1), python2.3-twisted-mail, python2.4-twisted-mail
+Replaces: python-twisted (<< 2.1), python2.3-twisted-mail, python2.4-twisted-mail
+Description: SMTP, IMAP and POP protocol implementation
+ Twisted Mail contains high-level, efficient protocol implementations
+ for both clients and servers of SMTP, POP3, and IMAP4. Additionally,
+ it contains an "out of the box" combination SMTP/POP3 virtual-hosting
+ mail server. Also included is a read/write Maildir implementation and
+ a basic Mail Exchange calculator (depends on Twisted Names).
