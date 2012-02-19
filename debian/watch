@@ -1,0 +1,2 @@
+version=3
+http://tmrc.mit.edu/mirror/twisted/Mail/(\d\.\d)/ TwistedMail-([\d\.]*)\.tar\.bz2
