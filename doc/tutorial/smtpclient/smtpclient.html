@@ -733,7 +733,7 @@ task, <code>twisted.mail.relaymanager.MXCalculator</code>:</p>
 4
 </p><span class="py-src-keyword">def</span> <span class="py-src-identifier">getMailExchange</span>(<span class="py-src-parameter">host</span>):
     <span class="py-src-keyword">def</span> <span class="py-src-identifier">cbMX</span>(<span class="py-src-parameter">mxRecord</span>):
-        <span class="py-src-keyword">return</span> <span class="py-src-variable">str</span>(<span class="py-src-variable">mxRecord</span>.<span class="py-src-variable">exchange</span>)
+        <span class="py-src-keyword">return</span> <span class="py-src-variable">str</span>(<span class="py-src-variable">mxRecord</span>.<span class="py-src-variable">name</span>)
     <span class="py-src-keyword">return</span> <span class="py-src-variable">relaymanager</span>.<span class="py-src-variable">MXCalculator</span>().<span class="py-src-variable">getMX</span>(<span class="py-src-variable">host</span>).<span class="py-src-variable">addCallback</span>(<span class="py-src-variable">cbMX</span>)
 </pre>
 
@@ -752,6 +752,6 @@ report its results, and finally shut down the reactor.</p>
 </div>
 
     <p><a href="../../howto/index.html">Index</a></p>
-    <span class="version">Version: 12.0.0</span>
+    <span class="version">Version: 12.1.0</span>
   </body>
 </html>
